@@ -24,9 +24,9 @@ int main(void) {
   }
 }
 
-double wallis_pi(int n) 
+float wallis_pi(int n) 
 {
-double ans=1.0;
+float ans=1.0;
 for(int i=1;i<=n;i++) 
 {float nr= 4*i*i;
 
@@ -35,20 +35,4 @@ ans= ans*(nr/(nr-1));
 } 
 
 return ans*2; 
-}
-float mc_pi(int n) 
-{float c=0.0;
-float ans; 
-
-for(int i=1;i<=n;i++) 
-{ 
-float x= frandom(); 
-float y= frandom(); 
-printf("%f %f\n ",x,y);
-if(sqrt(x*x+y*y)<1) 
-c++; 
-} 
-
-ans = 4*c/n;
-return ans; 
 }
